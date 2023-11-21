@@ -1,0 +1,73 @@
+.whole{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding-right: 100px;
+    padding-left: 100px;
+    /* align-items: center; */
+}
+.single{
+    display: flex;
+     /* border: 1px solid grey;
+    border-radius: 3px;  */
+}
+.double{
+    display: flex;
+}
+.hero1,.hero2,.villan1,.villan2{
+    border:1px solid rgb(156, 153, 153);
+    border-radius: 5px; 
+    padding-top: 20px;
+    padding-bottom: 5px;
+    margin-left: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.score{
+    font-weight: 400;
+    font-size: 50px;
+    text-align: center;
+    /* border: 1px solid black; */
+    margin-top: 5px;
+}
+.middle{
+    font-weight: 400;
+    font-size: 50px;
+    /* border: 1px solid black; */
+    margin-left: 130px;
+    margin-right: 80px;
+}
+.name{
+    text-align: center;
+    font-weight: 400;
+}
+
+@media only screen and (max-width:600px){
+    .whole{
+        display: block;
+        /* flex-wrap: wrap; */
+    }
+    .villan1,.villan2,.hero1,.hero2{
+        display: block;
+        /* margin-bottom: 20px; */
+        margin-left: -10px;
+        margin-right: 10px;
+        margin-bottom: 20px;
+
+
+    }
+    .single,.double{
+        display: block;
+        margin-bottom: 10px;
+    }
+    .middle{
+        /* text-align: center; */
+        /* border: 1px solid red; */
+        height: 50px;
+        width: 70px;
+        margin-right: 40px;
+        margin-left: 30px;
+        margin-bottom: 30px;
+        margin-top: 20px;
+    }
+    
+}
